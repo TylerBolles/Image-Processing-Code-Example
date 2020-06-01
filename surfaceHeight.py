@@ -71,7 +71,7 @@ for i in range(0,100, 6):
     ax.cla()
     ax.imshow(images[i], cmap='gray', aspect='auto') # show raw image 
                                                      # this is very time consuming
-    ax.plot(height[:, i], color = 'r', lw = 2) # result superimposed in image
+    ax.plot(height[:, i], color = 'r', lw = 2) # plot result superimposed on image
     plt.pause(0.001)
 
 height = -height # convert to physical units
