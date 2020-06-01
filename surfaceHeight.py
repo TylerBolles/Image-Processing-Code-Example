@@ -80,7 +80,7 @@ for ind in np.arange(int(num_x_pixels/box_size)):
     height[ind, :] -= mean_height[ind] # water heights have mean zero by physical law. 
                                    # this operation controls for slight angles in camera.
 height *= pixels_to_cm_ratio # convert to centimeters
-height_df = pd.DataFrame(height.T, index = t, columns = x*pixels_to_cm_ratio)
+height_df = pd.DataFrame(height.T, index = t, columns = x * pixels_to_cm_ratio)
 height_df.to_csv('SurfaceHeightDemo.csv', float_format = '%.4e')
 
 
