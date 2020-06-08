@@ -40,7 +40,7 @@ def get_file_name(i):
         suffix = '_0'+str(i)
     else:
         suffix = '_'+str(i)
-    name = 'June26j' + '/' + 'June26j' + suffix + '.png'
+    name = 'June26j/June26j' + suffix + '.png'
     return name
 
 num_x_pixels = 1920
